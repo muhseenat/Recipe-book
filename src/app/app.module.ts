@@ -9,6 +9,9 @@ import { RecipeItemComponent } from './components/recipe/recipe-item/recipe-item
 import { RecipeDetailsComponent } from './components/recipe/recipe-details/recipe-details.component';
 import { ShoppingListComponent } from './components/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './components/shopping-list/shopping-edit/shopping-edit.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -19,11 +22,15 @@ import { ShoppingEditComponent } from './components/shopping-list/shopping-edit/
     RecipeItemComponent,
     RecipeDetailsComponent,
     ShoppingListComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
   ],
   imports: [
+    MatSlideToggleModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule,
+    MatToolbarModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
