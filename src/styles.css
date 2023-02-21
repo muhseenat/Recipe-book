@@ -1,3 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+.fs-1{
+    font-size:1.5rem;
+}
+
+.mr-1{
+    margin-right: 1rem;
+}
+.ml-1{
+    margin-left: 1rem;
+}
+.mx-1{
+margin: 0 1rem 0 1rem;
+}
+
+.align-center{
+    align-self: center;
+}
