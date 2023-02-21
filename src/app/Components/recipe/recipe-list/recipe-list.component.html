@@ -1,10 +1,20 @@
-<div class="row">
-    <p>
-        Recipessss
-    </p>
-    <div class="col-md-5">
-        <app-recipe-item></app-recipe-item>
-        <app-recipe-item></app-recipe-item>
-        <app-recipe-item></app-recipe-item>
-    </div>
+
+<div fxLayout="row"  class="mt-1" fxLayoutAlign="space-around center" >
+    <mat-card class="example-card" *ngFor="let recipe of recipes">
+        <mat-card-header>
+          <mat-card-title>{{recipe.name}}</mat-card-title>
+          <mat-card-subtitle>{{recipe.category}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-md-image [src]="recipe.imagePath" alt="Photo Recipe">
+        <mat-card-content>
+          <p>
+            {{recipe.description}}
+          </p>
+        </mat-card-content>
+        <!-- <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions> -->
+      </mat-card>
+    
 </div>

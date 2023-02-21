@@ -13,6 +13,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
     Headercomponent,
@@ -30,7 +32,9 @@ import {MatButtonModule} from '@angular/material/button';
     AppRoutingModule,
     MatToolbarModule ,
     MatIconModule, 
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
+    FlexLayoutModule
     
   ],
   providers: [],

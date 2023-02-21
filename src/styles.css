@@ -17,7 +17,12 @@ body {
 .fs-1{
     font-size:1.5rem;
 }
-
+.mt-1{
+    margin-top: 1rem;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
 .mr-1{
     margin-right: 1rem;
 }
